@@ -18,6 +18,29 @@ const wordCounter = (value) => {
 
 // OPTIONAL CHALLENGE
 const toggleMode = (btnText) => {
+  const header = document.querySelector("h1");
+  const dark = "#101010"
+  const light = "#ffffff"
+  if (btnText === "Dark Mode") {
+    toggleButton.innerHTML = "Light Mode"
+    toggleButton.classList.add("btn-outline-light");
+    toggleButton.classList.remove("btn-outline-dark");
+    document.body.style.background = dark;
+    header.style.color = light; 
+    wordCount.style.color = light;
+    textarea.style.background = dark;
+    textarea.style.color = light;
+  } else {
+    toggleButton.innerHTML = "Dark Mode"
+    toggleButton.classList.add("btn-outline-dark");
+    toggleButton.classList.remove("btn-outline-light");
+    // document.body.style.removeProperty("background");
+    document.body.style.background = light;
+    header.style.removeProperty("color");
+    wordCount.style.color = dark;
+    textarea.style.background = light;
+    textarea.style.color = dark;
+  }
   // complete the function
 }
 

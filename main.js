@@ -7,7 +7,7 @@ const wordCounter = (value) => {
   if (value) {
     // COMPLETE THE LOGIC 
     // Divide input string into array, division point is a space character followed by a word character
-    let words = value.split(/\s\w/);
+    let words = value.split(/\s\S/);
     // Output length of array (= number of words in string)
     wordCount.innerHTML = `Word Count: ${words.length}`; 
   } else {

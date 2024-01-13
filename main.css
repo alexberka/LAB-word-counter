@@ -5,31 +5,17 @@ body {
 }
 
 h1 {
+  font-size: 1.5em;
   text-align: center;
 }
 
 .error {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   color: red;
   font-weight: bold;
 }
 
-textarea {
-  width: 100%;
-  font-size: 1.5em;
-}
-
-textarea::placeholder {
-  color: blue;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-}
-
 button {
-  background: green;
-  color: white;
-  padding: 2px 6px;
-  border-radius: 1px;
-  font-size: 1.5em;
+  margin-top: 4px;
 }
